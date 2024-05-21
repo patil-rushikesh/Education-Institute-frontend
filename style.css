@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Font for all the elements of html */
+:root {
+    --pink: #FF046F;
+    --violet: #c63bfa;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--pink);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #333;
+    height: 3000px;
+}
+
+header {
+    width: 96%;
+    background: #fff;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000px;
+    transition: 200ms;
+}
+
+.header-active {
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+}
+
+header .nav-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .nav-bar ul li {
+    margin: 0 1rem;
+    transition: 20ms;
+    cursor: pointer;
+}
+
+header .nav-bar ul li a {
+    font-size: 2rem;
+    color: var(--pink);
+}
+
+header .nav-bar ul li .active,
+header .nav-bar ul li a:hover {
+    color: var(--violet);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: var(--violet);
+    text-transform: uppercase;
+}
+
+header .logo i {
+    color: var(--pink);
+    padding: 0 .2rem;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: var(--pink);
+    cursor: pointer;
+    display: none;
+}
+
+header .fa-times {
+    transform: rotate(180deg);
+    color: var(--violet);
+}
+
+/*media queries*/
+@media(max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .nav-bar {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 1rem;
+        opacity: 0;
+        transition: 200ms linear;
+    }
+
+    header .nav-bar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+
+    header .nav-bar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .nav-bar ul li a {
+        font-size: 3rem;
+        display: block;
+
+    }
+
+    header .nav-toggle {
+        top: 5.5rem;
+        opacity: 1;
+
+    }
+}
