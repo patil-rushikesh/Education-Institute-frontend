@@ -285,42 +285,50 @@ header .fa-times {
     flex-wrap: wrap;
     padding: 2rem 0;
 }
-.teacher .card-container .card{
+
+.teacher .card-container .card {
     padding: 2rem;
     margin: 2rem;
-    background:#fff;
+    background: #fff;
     text-align: center;
-    width:28rem;
+    width: 28rem;
     box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
 }
-.teacher .card-container .card img{
+
+.teacher .card-container .card img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
     filter: grayscale();
     transition: 200ms;
 }
-.teacher .card-container .card:hover img{
+
+.teacher .card-container .card:hover img {
     filter: grayscale(0);
 }
-.teacher .card-container .card h3{
+
+.teacher .card-container .card h3 {
     color: var(--pink);
     font-size: 2rem;
-    padding:.5rem 0;
+    padding: .5rem 0;
 }
-.teacher .card-container .card p{
+
+.teacher .card-container .card p {
     font-size: 1.7rem;
     color: #666;
 }
-.teacher .card-container .card .icons a{
+
+.teacher .card-container .card .icons a {
     font-size: 1.9rem;
     padding: 1.5rem .5rem;
     color: var(--pink);
 }
-.teacher .card-container .card .icons a:hover{
+
+.teacher .card-container .card .icons a:hover {
     color: var(--violet);
 }
-.course .box-container{
+
+.course .box-container {
     width: 85%;
     display: flex;
     justify-content: center;
@@ -329,16 +337,17 @@ header .fa-times {
     flex-wrap: wrap;
 }
 
-.course .box-container .box{
+.course .box-container .box {
     height: 18rem;
     width: 25rem;
-    margin:3.5rem 2rem;
+    margin: 3.5rem 2rem;
     text-align: center;
     border-radius: 1rem;
     box-shadow: .3rem .3rem 0 .1rem var(--violet),
-                .5rem .5rem .5rem rgba(0, 0, 0, .3);
+        .5rem .5rem .5rem rgba(0, 0, 0, .3);
 }
-.course .box-container .box i{
+
+.course .box-container .box i {
     height: 10rem;
     width: 10rem;
     line-height: 8rem;
@@ -353,27 +362,31 @@ header .fa-times {
     box-shadow: 0 0 0 1rem #fff inset;
     font-size: 3.5rem;
 }
-.course .box-container .box h3{
+
+.course .box-container .box h3 {
     font-size: 2rem;
     color: var(--violet);
 }
-.course .box-container .box p{
+
+.course .box-container .box p {
     font-size: 1.5rem;
     color: #999;
     padding: 1rem 0;
 }
 
 
-.review{
+.review {
     background: #f9f9f9;
 }
-.review .box-container{
+
+.review .box-container {
     display: flex;
     justify-content: center;
     padding-top: 4rem;
     flex-wrap: wrap;
 }
-.review .box-container .box{
+
+.review .box-container .box {
     width: 28rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -381,7 +394,8 @@ header .fa-times {
     background: #fff;
     margin: 4rem 2rem;
 }
-.review .box-container .box img{
+
+.review .box-container .box img {
     height: 8.5rem;
     width: 8.5rem;
     object-fit: cover;
@@ -391,17 +405,20 @@ header .fa-times {
     border-left: .6rem solid var(--violet);
     border-bottom: .6rem solid var(--violet);
 }
-.review .box-container .box h3{
+
+.review .box-container .box h3 {
     font-size: 2rem;
     color: var(--pink);
     padding: 0 .5rem;
 }
-.review .box-container .box p{
+
+.review .box-container .box p {
     font-size: 1.4rem;
     color: #999;
     padding: 0 1.3rem;
 }
-.review .box-container .box .stars i{
+
+.review .box-container .box .stars i {
     font-size: 1.6rem;
     color: var(--violet);
     padding: 1.3rem .1rem;
@@ -487,7 +504,7 @@ header .fa-times {
         padding: 0 2.5rem;
     }
 
-    .course .box-container{
+    .course .box-container {
         width: 100%;
     }
 
