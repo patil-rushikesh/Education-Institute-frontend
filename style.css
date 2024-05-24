@@ -26,7 +26,6 @@ html {
     overflow-x: hidden;
 }
 
-
 header {
     width: 96%;
     background: #fff;
@@ -423,15 +422,84 @@ header .fa-times {
     color: var(--violet);
     padding: 1.3rem .1rem;
 }
+.contact{
+    background-color: #333;
+}
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
 
+.contact .row .image img {
+    width: 50vw;
+    height: 70vh;
+}
 
+.contact .row .form-container {
+    width: 50%;
+    padding-right: 6rem;
+}
 
+.contact .row .form-container input, textarea {
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-radius: 5rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: var(--pink);
+    font-size: 1.6rem;
+    transition: .2s linear;
+}
+.contact .row .form-container input:focus, textarea:focus{
+    border: .2rem solid var(--violet);
+}
+.contact .row .form-container textarea{
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+.contact .row .form-container input[type="submit"]{
+    width: 17rem;
+    background: var(--pink);
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+}
+.contact .row .form-container input[type="submit"]:hover{
+    background: none;
+    color: var(--pink);
+    border: .2rem solid var(--pink);
+}
 
+.footer{
+    text-align: center;
+}
+.footer .icons{
+    padding: 3rem 0;
+}
+.footer .icons a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--violet);
+    font-size: 2rem;
+    margin: 0 .1rem;
+    transition: .2s linear;
+}
 
-
-
-
-
+.footer .icons a:hover{
+    color: #fff;
+    background:var(--pink);
+    border-color: var(--pink);
+}
 
 
 
@@ -507,7 +575,20 @@ header .fa-times {
     .course .box-container {
         width: 100%;
     }
-
+    .contact .box-container{
+        width: 100%;
+    }
+    .contact .row{
+        flex-flow: column;
+    }
+    .contact .row .image img{
+        height: 50vh;
+        width: 90vw;
+    }
+    .contact .row .form-container{
+        width: 90%;
+        padding: 0;
+    }
 
 
 
